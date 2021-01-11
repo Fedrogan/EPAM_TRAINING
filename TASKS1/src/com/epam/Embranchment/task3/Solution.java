@@ -5,7 +5,7 @@ public class Solution {
     public static void main(String[] args) {
         int[] a = {2, 1};
         int[] b = {4, 1};
-        int[] c = {6, 0};
+        int[] c = {6, 1};
         pointsIsOnOneLine(a, b, c);
     }
 
