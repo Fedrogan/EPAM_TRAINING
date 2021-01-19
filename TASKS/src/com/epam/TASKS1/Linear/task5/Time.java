@@ -4,22 +4,21 @@ package com.epam.TASKS1.Linear.task5;
 import java.util.Scanner;
 
 public class Time {
-    private static long seconds;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
-            seconds = scanner.nextLong();
+            long seconds = scanner.nextLong();
             if (seconds < Math.pow(10, 18)) {
                 long hrs = seconds / 3600;
                 byte min = (byte) ((seconds % 3600) / 60);
                 byte sec = (byte) ((seconds % 3600) % 60);
                 printResult(hrs, min, sec);
             } else {
-                System.out.printf("С момента Большого взрыва прошло меньше времени, чем Вы ввели :)");
+                System.out.print("С момента Большого взрыва прошло меньше времени, чем Вы ввели :)");
             }
         } catch (Exception e) {
-            System.out.printf("Вы ввели слишком большое число");
+            System.out.print("Ошибка ввода!");
         }
     }
 
