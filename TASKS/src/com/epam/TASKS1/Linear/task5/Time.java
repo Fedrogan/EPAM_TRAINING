@@ -18,7 +18,7 @@ public class Time {
                 System.out.print("С момента Большого взрыва прошло меньше времени, чем Вы ввели :)");
             }
         } catch (Exception e) {
-            System.out.print("Ошибка ввода!");
+            System.out.print("Ошибка ввода.");
         }
     }
 
